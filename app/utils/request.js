@@ -1,4 +1,4 @@
-import 'whatwg-fetch';
+import axios from 'axios';
 
 /**
  * Requests a URL, returning a promise
@@ -9,28 +9,16 @@ import 'whatwg-fetch';
  * @return {object}           An object containing either "data" or "err"
  */
 export default function request(url, options) {
-  return fetch(url, options)
+  return axios(url, options)
     .then(checkStatus)
-    .then(parseJSON)
-    .then((data) => ({ data }))
+    .then((data) => (data))
     .catch((err) => ({ err }));
-}
-
-/**
- * Parses the JSON returned by a network request
- *
- * @param  {object} response A response from a network request
- *
- * @return {object}          The parsed JSON from the request
- */
-function parseJSON(response) {
-  return response.json();
 }
 
 /**
  * Checks if a network request came back fine, and throws an error if not
  *
- * @param  {objct} response   A response from a network request
+ * @param  {object} response  A response from a network request
  *
  * @return {object|undefined} Returns either the response, or throws an error
  */
