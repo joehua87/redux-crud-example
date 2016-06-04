@@ -151,6 +151,7 @@
     "react-router-redux": "^4.0.4",
     "react-router-scroll": "^0.2.0",
     "redux": "^3.5.2",
+    "redux-actions": "^0.9.1",
     "redux-immutable": "^3.0.6",
     "redux-saga": "^0.10.0",
     "reselect": "^2.5.1",
