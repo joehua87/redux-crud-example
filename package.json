@@ -97,7 +97,7 @@
         }
       ],
       "no-console": 1,
-      "no-underscore-dangle": 1,
+      "no-underscore-dangle": 0,
       "max-len": 0,
       "prefer-template": 2,
       "no-use-before-define": 0,
