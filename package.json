@@ -30,6 +30,7 @@
     "lint:js": "npm run lint:eslint && npm run lint:jscs",
     "lint:js:staged": "npm run lint:eslint:staged && npm run lint:jscs:staged",
     "lint:eslint": "eslint . --ignore-path .gitignore",
+    "lint:eslint:fix": "eslint . --ignore-path .gitignore --fix",
     "lint:eslint:staged": "eslint-staged",
     "lint:jscs": "jscs .",
     "lint:jscs:staged": "jscs-staged",
