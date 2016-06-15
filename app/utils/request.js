@@ -1,4 +1,5 @@
 import axios from 'axios';
+import qs from 'qs';
 
 /**
  * Requests a URL, returning a promise
@@ -9,7 +10,12 @@ import axios from 'axios';
  * @return {object}           An object containing either "data" or "err"
  */
 export default function request(url, options) {
-  return axios(url, options)
+  return axios(url, {
+    contentType: 'application/json; charset=utf-8',
+    responseType: 'json',
+    paramsSerializer: (param) => qs.stringify(param, { encode: false }),
+    ...options,
+  })
     .then(checkStatus)
     .then((data) => (data))
     .catch((err) => ({ err }));
