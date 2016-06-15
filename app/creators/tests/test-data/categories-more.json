@@ -1,0 +1,52 @@
+{
+  "count": 14,
+  "entities": [
+    {
+      "_id": "5667f8eec4f8f61b43232394",
+      "slug": "weight-loss-motivation",
+      "name": "Weight Loss Motivation",
+      "website": "website2.com",
+      "parent": {
+        "slug": "weight-loss-methods",
+        "_id": "5667f8eec4f8f61b43232393"
+      },
+      "isFeatured": false
+    },
+    {
+      "_id": "5667f8eec4f8f61b43232395",
+      "slug": "health-articles",
+      "name": "Health Articles",
+      "website": "website3.com",
+      "parent": null,
+      "isFeatured": false
+    },
+    {
+      "_id": "5667f8eec4f8f61b43232396",
+      "slug": "health-product-review",
+      "name": "Health Product Review",
+      "website": "website3.com",
+      "parent": null,
+      "isFeatured": false
+    },
+    {
+      "_id": "567955edb2016f1c5303e668",
+      "slug": "healthy-recipes",
+      "name": "Healthy Recipes",
+      "website": "website2.com",
+      "modifiedTime": "2015-12-22T13:54:30.211Z",
+      "display": true,
+      "isFeatured": false,
+      "images": {
+        "default": {
+          "path": "",
+          "src": ""
+        }
+      }
+    }
+  ],
+  "filter": {
+  },
+  "projection": "slug name website isFeatured display postCount style parent images modifiedTime",
+  "page": 2,
+  "limit": 10
+}

@@ -1,0 +1,136 @@
+{
+  "count": 14,
+  "entities": [
+    {
+      "_id": "5667f8eec4f8f61b43232387",
+      "slug": "acne-care",
+      "name": "Acne Care",
+      "website": "website1.com",
+      "images": {
+        "default": {
+          "path": "",
+          "src": "https://s3.amazonaws.com/betterlife/images/custom/website1.com/categories/acneCare-400.jpg"
+        }
+      },
+      "parent": null,
+      "isFeatured": false,
+      "display": true,
+      "modifiedTime": "2015-12-23T02:13:29.577Z"
+    },
+    {
+      "_id": "5667f8eec4f8f61b43232388",
+      "slug": "anti-aging",
+      "name": "Anti Aging",
+      "website": "website1.com",
+      "images": {
+        "default": {
+          "path": "",
+          "src": "https://s3.amazonaws.com/betterlife/images/custom/website1.com/categories/antiAging-400.jpg"
+        }
+      },
+      "parent": null,
+      "isFeatured": false,
+      "display": true,
+      "modifiedTime": "2015-12-23T02:12:51.146Z"
+    },
+    {
+      "_id": "5667f8eec4f8f61b43232389",
+      "slug": "skin-care",
+      "name": "Skin Care",
+      "website": "website1.com",
+      "images": {
+        "default": {
+          "path": "",
+          "src": "https://s3.amazonaws.com/betterlife/images/custom/website1.com/categories/skinCare-400.jpg"
+        }
+      },
+      "parent": null,
+      "isFeatured": false,
+      "display": true,
+      "modifiedTime": "2015-12-23T02:13:46.949Z"
+    },
+    {
+      "_id": "5667f8eec4f8f61b4323238a",
+      "slug": "skin-care-products-reviews",
+      "name": "Skin Care Products Reviews",
+      "website": "website1.com",
+      "images": {
+        "imageSet": []
+      },
+      "parent": null,
+      "isFeatured": false
+    },
+    {
+      "_id": "5667f8eec4f8f61b4323238b",
+      "slug": "skin-whitening",
+      "name": "Skin Whitening",
+      "website": "website1.com",
+      "images": {
+        "imageSet": []
+      },
+      "parent": null,
+      "isFeatured": false
+    },
+    {
+      "_id": "5667f8eec4f8f61b4323238c",
+      "slug": "health-and-lifestyle",
+      "name": "Health & Lifestyle",
+      "website": "website2.com",
+      "parent": null,
+      "isFeatured": false,
+      "display": true,
+      "modifiedTime": "2015-12-22T14:04:09.483Z"
+    },
+    {
+      "_id": "5667f8eec4f8f61b4323238e",
+      "slug": "fast-weight-loss",
+      "name": "Fast Weight Loss",
+      "website": "website2.com",
+      "parent": {
+        "slug": "weight-loss-methods",
+        "_id": "5667f8eec4f8f61b43232393"
+      },
+      "isFeatured": false
+    },
+    {
+      "_id": "5667f8eec4f8f61b43232391",
+      "slug": "weight-loss-tips",
+      "name": "Weight Loss Tips",
+      "website": "website2.com",
+      "parent": {
+        "_id": "5667f8eec4f8f61b43232393",
+        "slug": "weight-loss",
+        "website": "website2.com"
+      },
+      "isFeatured": false,
+      "display": true,
+      "modifiedTime": "2015-12-22T13:55:04.500Z"
+    },
+    {
+      "_id": "5667f8eec4f8f61b43232392",
+      "slug": "food",
+      "name": "Food",
+      "website": "website2.com",
+      "parent": null,
+      "isFeatured": false,
+      "display": true,
+      "modifiedTime": "2015-12-22T14:03:20.589Z"
+    },
+    {
+      "_id": "5667f8eec4f8f61b43232393",
+      "slug": "weight-loss",
+      "name": "Weight Loss",
+      "website": "website2.com",
+      "parent": null,
+      "isFeatured": false,
+      "display": true,
+      "modifiedTime": "2015-12-25T10:25:35.198Z",
+      "style": "pastelRed"
+    }
+  ],
+  "filter": {
+  },
+  "projection": "slug name website isFeatured display postCount style parent images modifiedTime",
+  "page": 1,
+  "limit": 10
+}

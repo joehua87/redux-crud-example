@@ -1,0 +1,43 @@
+{
+  "key": "slug",
+  "defaultLimit": 10,
+  "queryProjection": "slug name website isFeatured display postCount style parent images modifiedTime",
+  "detailProjection": "slug name website isFeatured display postCount style parent images description seo social images createdTime modifiedTime",
+  "fields": [
+    {
+      "filterField": "q",
+      "compareType": "FULL_TEXT",
+      "dbType": "STRING"
+    },
+    {
+      "filterField": "website",
+      "dbField": "website",
+      "compareType": "EQUAL",
+      "dbType": "STRING"
+    },
+    {
+      "filterField": "isFeatured",
+      "dbField": "isFeatured",
+      "compareType": "EQUAL",
+      "dbType": "BOOLEAN"
+    },
+    {
+      "filterField": "slug",
+      "dbField": "slug",
+      "compareType": "REG_EX_I",
+      "dbType": "STRING"
+    },
+    {
+      "filterField": "name",
+      "dbField": "name",
+      "compareType": "REG_EX_I",
+      "dbType": "STRING"
+    },
+    {
+      "filterField": "parent",
+      "dbField": "parent.slug",
+      "compareType": "EQUAL",
+      "dbType": "STRING"
+    }
+  ]
+}
